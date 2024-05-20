@@ -1,4 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './variables.scss';
+
 *{
 	font-family: 'Roboto';
+}
+body{
+	background-color: $background-color;
+}
+.header{
+	background-color: $background-color;
+
+}
+.container00{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	&.container01{
+		display: flex;
+		flex-direction: row;
+
+		
+	}
+}
+.self-img{
+	width: 350px;
+	height: 300px;
+	border-radius: 37% 37% 55% 45% / 42% 47% 29% 53%;
+	border: 1px solid black;
+	box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.368);
+}
+.nav-link{
+
+	&::before{
+		content: '';
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		height: 4px;
+		background-color: $button-hover;
+		transition: transform 300ms ease-in-out;
+		transform: scaleX(0);
+		z-index: 1;
+		
+	}
+	&:hover::before,:focus::before{
+		transform: scaleX(1);
+		z-index: 1;
+	}
 }

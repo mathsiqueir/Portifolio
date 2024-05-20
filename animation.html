@@ -6,12 +6,23 @@
 	<title>lib animation</title>
 		<!--lib Animation css-->
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="css/animation.css">
 </head>
 <body>
-	<div data-aos="fade-right"
-     data-aos-anchor-placement="center-center">
-		 <h1>Hellow World</h1>
-</div>
+	<div class="btn-container">
+		<button class="btn btn-border-pop">border-pop</button>
+		<button class="btn btn-background-slide">background-slide</button>
+		<button class="btn btn-background-circle">background-circle</button>
+		<button class="btn btn-border-underline">border-underline</button>
+	</div>
+	<div>
+		<ul>
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Home</a>
+			</li>
+		</ul>
+	</div>
+
 	<!--script animation-->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init();</script>

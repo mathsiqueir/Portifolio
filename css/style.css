@@ -3,4 +3,48 @@
   font-family: "Roboto";
 }
 
+body {
+  background-color: #dee7e9;
+}
+
+.header {
+  background-color: #dee7e9;
+}
+
+.container00 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container00.container01 {
+  display: flex;
+  flex-direction: row;
+}
+
+.self-img {
+  width: 350px;
+  height: 300px;
+  border-radius: 37% 37% 55% 45%/42% 47% 29% 53%;
+  border: 1px solid black;
+  box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.368);
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: #22423d;
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  z-index: 1;
+}
+.nav-link:hover::before, .nav-link :focus::before {
+  transform: scaleX(1);
+  z-index: 1;
+}
+
 /*# sourceMappingURL=style.css.map */
