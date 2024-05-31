@@ -19,8 +19,14 @@ body {
   outline: 1px solid red;
 }
 
-.navbar {
-  margin: 0.5rem 1.5rem 0 1.5rem;
+.navbar .navbar-brand {
+  outline: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.navbar .navbar-brand p {
+  margin-bottom: 0;
 }
 
 .fa-brands {
@@ -28,6 +34,7 @@ body {
 }
 
 .container00 {
+  margin-top: 1rem;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -42,49 +49,22 @@ body {
   box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.368);
 }
 
-.nav-item > a::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  border-radius: 0.8rem;
-  background-color: #22423d;
-  transition: transform 500ms ease-in-out;
-  transform: scaleX(0);
-  z-index: 1;
-}
-
-.nav-item > a:hover::before,
-:focus::before {
-  transform: scaleX(1);
-  z-index: 1;
-  box-shadow: 3px 3px 16px #22423d;
-}
-
-@media (max-width: 700px) {
-  .info {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .info {
-  display: grid;
-  grid-template-areas: "myInfo self-img";
-  max-width: 800px;
+  margin-top: 4rem;
+  outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
 .myInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  grid-area: "myInfo";
   max-width: 400px;
 }
 
 .self-img {
-  margin-left: 1rem;
+  margin: 1rem 0 1rem 0;
   grid-area: "self-img";
 }
 
@@ -98,6 +78,10 @@ body {
 .stack aside > img {
   z-index: -1;
   width: 30px;
+}
+
+.container02 {
+  margin-top: 4rem;
 }
 
 .setup-img {
