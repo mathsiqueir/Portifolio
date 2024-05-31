@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+	display: grid;
+	height: 100vh;
+}
+
+
+header{
+	background-color: aqua;
+
+}
+main{
+	background-color: blueviolet;
+}
+aside{
+	background-color: palevioletred;
+}
+
+footer{
+	background-color: chartreuse;
+}
