@@ -20,6 +20,25 @@ body{
 	outline: 1px solid red;
 	
 }
+.rainbow{
+	background: linear-gradient(to left,rgb(216, 216, 216), black, rgb(216, 216, 216));
+	background-clip: text;
+	display: inline;
+	color: transparent;
+	animation: animated 9s linear infinite;
+
+}
+.rainbow1{
+	background: linear-gradient(to left,violet,indigo,blue);
+	background-clip: text;
+	display: inline;
+	color: transparent;
+	animation: animated 15s linear forwards;
+
+}
+@keyframes animated{
+	to{background-position-x: 300px ;}
+}
 .navbar{
 
 	.navbar-brand{
@@ -38,7 +57,8 @@ body{
 	color: black;
 }
 
-.container00 {
+.container00{
+	width: 100%;
 	margin-top: 1rem;
 	height: 100vh;
 	display: flex;
@@ -80,6 +100,7 @@ body{
 	margin-top: 4rem;
 	outline: $outilne;
 	display: flex;
+	max-width: 680px;
 	flex-direction: column;
 }
 
@@ -111,17 +132,25 @@ body{
 }
 
 
-
+.container-img{
+	width: 100%;
+	display: flex;
+	align-items: center ;
+	justify-content: center;
+}
 //container 02
 .container02{
-	margin-top: 4rem;
+
+	
 }
 .setup-img{
-	height: 200px;
+
+	width: 250px;
 	border-radius: 0.8rem;
 	border: transparent;
 	box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.368);
-	z-index: 2;
+	z-index: 1;
+	
 }
 .about-me{
 	display: flex;
