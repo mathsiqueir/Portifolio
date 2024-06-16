@@ -17,7 +17,6 @@ body{
 	right: 0;
 	padding: 0 1rem 0 1rem;
 	z-index: 10;
-	outline: 1px solid red;
 	
 }
 .rainbow{
@@ -42,7 +41,6 @@ body{
 .navbar{
 
 	.navbar-brand{
-		outline: 1px solid red;
 		display: flex;
 		justify-content: center;
 		align-items: end;
@@ -75,32 +73,10 @@ body{
 	box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.368);
 }
 
-// .nav-item >a::before {
-// 	content: '';
-// 	position: absolute;
-// 	right: 0;
-// 	left: 0;
-// 	bottom: 0;
-// 	height: 4px;
-// 	border-radius: 0.8rem;
-// 	background-color: $button-hover;
-// 	transition: transform 500ms ease-in-out;
-// 	transform: scaleX(0);
-// 	z-index: 1;
-
-// }
-// .nav-item > a:hover::before,
-// :focus::before {
-// 	transform: scaleX(1);
-// 	z-index: 1;
-// 	box-shadow: 3px 3px 16px  #22423d;
-// }
-
 .info {
 	margin-top: 4rem;
-	outline: $outilne;
 	display: flex;
-	max-width: 680px;
+	min-width: 320px;
 	flex-direction: column;
 }
 
@@ -116,7 +92,17 @@ body{
 
 .self-img {
 	margin: 1rem 0 1rem 0;
-	grid-area: "self-img"
+	grid-area: "self-img";
+}
+@media (min-width:768px) {
+	.info{
+		width: 800px;
+		display: grid;
+		grid-template-areas: 'myInfo container-img';
+	}
+	.self-img{
+		width: 330px;
+	}
 }
 .stack{
 	display: flex;
@@ -133,7 +119,6 @@ body{
 
 
 .container-img{
-	width: 100%;
 	display: flex;
 	align-items: center ;
 	justify-content: center;
@@ -145,7 +130,7 @@ body{
 }
 .setup-img{
 
-	width: 250px;
+	min-width: 250px;
 	border-radius: 0.8rem;
 	border: transparent;
 	box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.368);

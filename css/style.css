@@ -16,7 +16,6 @@ body {
   right: 0;
   padding: 0 1rem 0 1rem;
   z-index: 10;
-  outline: 1px solid red;
 }
 
 .rainbow {
@@ -41,7 +40,6 @@ body {
   }
 }
 .navbar .navbar-brand {
-  outline: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -73,9 +71,8 @@ body {
 
 .info {
   margin-top: 4rem;
-  outline: 1px solid red;
   display: flex;
-  max-width: 680px;
+  min-width: 320px;
   flex-direction: column;
 }
 
@@ -91,6 +88,16 @@ body {
   grid-area: "self-img";
 }
 
+@media (min-width: 768px) {
+  .info {
+    width: 800px;
+    display: grid;
+    grid-template-areas: "myInfo container-img";
+  }
+  .self-img {
+    width: 330px;
+  }
+}
 .stack {
   display: flex;
   flex-direction: row;
@@ -104,14 +111,13 @@ body {
 }
 
 .container-img {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .setup-img {
-  width: 250px;
+  min-width: 250px;
   border-radius: 0.8rem;
   border: transparent;
   box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.368);
